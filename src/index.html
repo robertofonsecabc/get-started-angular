@@ -1,4 +1,4 @@
-<html ng-app>
+<html ng-app="firstApp" ng-controller='firstController'>
 <head>
 	<title>Application Example</title>	
 </head>
@@ -6,6 +6,15 @@
 	
 	<input type="text" ng-model="name" />
 	{{ name }}
+	
+	
+
+<footer>
+	<p>Refference:</p>
+	<ul ng-repeat="link in urlList">
+		<li><a href="{{ link }}" target="_blank">{{ link }}</a></li>
+	</ul>
+</footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
