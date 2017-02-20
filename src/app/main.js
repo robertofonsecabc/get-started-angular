@@ -20,8 +20,9 @@ angular
 			, 'http://gabrielfeitosa.com/angularjs-route/'
 		];
 		
+		// Creating function to change router
 		$scope.changeState = function(stateName) {
-			console.log( stateName );
+			// console.log( stateName );
 			$state.go(stateName);
 			$scope.state = stateName; 
 		};
